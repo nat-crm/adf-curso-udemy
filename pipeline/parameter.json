@@ -1,0 +1,33 @@
+{
+	"name": "parameter",
+	"properties": {
+		"activities": [
+			{
+				"name": "Set variable1",
+				"type": "SetVariable",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "parameter_value",
+					"value": {
+						"value": "@pipeline().parameters.fileName",
+						"type": "Expression"
+					}
+				}
+			}
+		],
+		"parameters": {
+			"fileName": {
+				"type": "string"
+			}
+		},
+		"variables": {
+			"parameter_value": {
+				"type": "String"
+			}
+		},
+		"annotations": [],
+		"lastPublishTime": "2022-03-15T23:27:35Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

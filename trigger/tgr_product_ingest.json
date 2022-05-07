@@ -1,0 +1,17 @@
+{
+	"name": "tgr_product_ingest",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Stopped",
+		"pipelines": [],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Minute",
+				"interval": 1,
+				"startTime": "2022-05-04T15:09:00",
+				"timeZone": "E. South America Standard Time"
+			}
+		}
+	}
+}

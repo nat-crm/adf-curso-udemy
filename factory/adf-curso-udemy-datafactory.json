@@ -1,0 +1,9 @@
+{
+	"name": "adf-curso-udemy-datafactory",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "9ad7a5c5-422f-4ae1-b86d-0d141d71f6f2",
+		"tenantId": "cf72e2bd-7a2b-4783-bdeb-39d57b07f76f"
+	}
+}

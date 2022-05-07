@@ -1,0 +1,19 @@
+{
+	"name": "ls_sql_udemy_curso_df",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureSqlDatabase",
+		"typeProperties": {
+			"connectionString": "Integrated Security=False;Encrypt=True;Connection Timeout=30;Data Source=server-udemy-curso-df.database.windows.net;Initial Catalog=curso-udemy-df;User ID=natalia",
+			"password": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "ls_akv",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "pwd-sqlbd-curso-udemy-df"
+			}
+		}
+	}
+}

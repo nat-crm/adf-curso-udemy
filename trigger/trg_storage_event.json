@@ -1,0 +1,28 @@
+{
+	"name": "trg_storage_event",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Stopped",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "ingest_SalesLT_Product",
+					"type": "PipelineReference"
+				},
+				"parameters": {
+					"tbName": "Product"
+				}
+			}
+		],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/stage/blobs/events",
+			"blobPathEndsWith": "product.txt",
+			"ignoreEmptyBlobs": false,
+			"scope": "/subscriptions/65182dc4-b0d9-4fb9-97b9-55e017c660c9/resourceGroups/MeusEstudos/providers/Microsoft.Storage/storageAccounts/stgsamplescreate",
+			"events": [
+				"Microsoft.Storage.BlobCreated"
+			]
+		}
+	}
+}
